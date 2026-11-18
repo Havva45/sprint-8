@@ -25,7 +25,7 @@
 			"response": []
 		},
 		{
-			"name": "2 - GET /events",
+			"name": "2 - GET /events (200, seed sonrası 6 kayıt)",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -41,15 +41,29 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"const list = pm.response.json();",
+							"if (Array.isArray(list) && list.length) {",
+							"  pm.collectionVariables.set(\"eventId\", list[0]._id);",
+							"}"
+						]
+					}
+				}
+			]
 		},
 		{
-			"name": "3 - GET /events/event-2",
+			"name": "3 - GET /events/:id (listeden bir _id, 200)",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/events/event-2",
+					"raw": "http://localhost:3000/events/{{eventId}}",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -57,7 +71,7 @@
 					"port": "3000",
 					"path": [
 						"events",
-						"event-2"
+						"{{eventId}}"
 					]
 				}
 			},
@@ -148,6 +162,12 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "eventId",
+			"value": ""
 		}
 	]
 }

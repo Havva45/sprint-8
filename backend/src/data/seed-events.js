@@ -1,6 +1,5 @@
-export const events = [
+export const seedEvents = [
   {
-    id: "event-1",
     title: "Isparta'da Yenilenebilir Enerji Semineri",
     category: "Seminer",
     capacity: 120,
@@ -11,7 +10,6 @@ export const events = [
       "Göller Bölgesi'nde güneş ve rüzgâr enerjisi potansiyeli, SDÜ'deki enerji projeleri ve öğrenciler için araştırma fırsatları.",
   },
   {
-    id: "event-2",
     title: "Gül Hasadı Fotoğrafçılık Atölyesi",
     category: "Atölye",
     capacity: 25,
@@ -22,7 +20,6 @@ export const events = [
       "Telefon kamerasıyla ışık, kadraj ve renk ayarlarını öğrenip Isparta gülü temalı kısa bir fotoğraf serisi hazırlıyoruz.",
   },
   {
-    id: "event-3",
     title: "SDÜ Mezunları Yazılım Sektörünü Anlatıyor",
     category: "Söyleşi",
     capacity: 60,
@@ -33,7 +30,6 @@ export const events = [
       "Bilgisayar Mühendisliği mezunlarımız ilk işlerini nasıl bulduklarını, staj sürecini ve mülakat deneyimlerini paylaşıyor.",
   },
   {
-    id: "event-4",
     title: "Davraz Kodlama Kampı Yarışması",
     category: "Yarışma",
     capacity: 90,
@@ -44,7 +40,6 @@ export const events = [
       "Üç kişilik takımların 6 saat boyunca algoritma soruları çözdüğü, dereceye girenlerin Davraz kış kampına katılacağı yarışma.",
   },
   {
-    id: "event-5",
     title: "Python ile Veri Analizine Giriş",
     category: "Atölye",
     capacity: 30,
@@ -55,7 +50,6 @@ export const events = [
       "Kampüs yemekhanesi menü verileri üzerinde pandas ile tablo okuma, filtreleme ve basit grafik çizme çalışması.",
   },
   {
-    id: "event-6",
     title: "Siber Zorbalık ve Dijital Güvenlik Semineri",
     category: "Seminer",
     capacity: 100,
